@@ -1,0 +1,27 @@
+Why use data structures:
+a. To have efficient way to store and access data based on the requirement
+b. Data structures can be used based on scenario so that it is fastere in operations like read/write/search sort etc
+c. to implement any algo to solve a problem we need appropirate D.S to solve issues with time/space complexity
+
+- Stack is heavily used in things like Browser back button(bak goes to last watched site), breadcrumbs, method call stack, O.S, image editing undo
+
+- properties of heap:
+- a binary tree
+- in min heap each node is lesser or equal to its both child , meaning root is always smallest, this way in o(1) time complexity we can find min of all items
+- in max heap each node is greater or euqal to its both child, meaning root is always highest(based on comparator or comparable), this way in O(1) time complexity we can find max among n elemnts
+- always a balanced binary tree
+
+LRU cache:
+- provides max size, once items reaches max size we remove oldest acceses item
+	-> for this we can use linkedlist , we keep on adding item at the head and hence tail will have least accessed item
+- if same key is asked we need to find the node and update value,
+	
+same kind of combination of hashtable and linked list exist in java as linekdhshmap
+steps:
+ -> have a doubl linked list , on every insertion checks if item exist in hashtable,
+	if yes, just update the node and also swap he nodes in linekd list , also make this node as previous of head and unlink from its won position
+
+// we need to ensure O(1) time complexity
+- > updated existing key with enw value -> O(1)
+-> insert new key valye pair -> O(1)
+-> find element with key -> O(1)
